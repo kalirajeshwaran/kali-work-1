@@ -99,11 +99,11 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Join Our Channel To Use This Bot.👇🏻**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("💢 Join Our Channel 💢", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -115,7 +115,7 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
+                InlineKeyboardButton("How To Open Links ❓", url='https://youtu.be/1Bf6cP9cmdI')
                 ],[
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
