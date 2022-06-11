@@ -11,31 +11,29 @@ from .Channel import (
 )
 
 HELP = """
-Basic Commads
+**Users Commads 👇🏻
 
 /start :- check am Alive
 
-Bot Owner Only
-/broadcast Replay Any Message or Media
-/stats user Status
-/ban_user  click ban_user more info
-/unban_user click unban_user more info
+
+Bot Owner Only 👇🏻
+
+/broadcast Replay Any Message Or Media
+/stats User Status
+/ban_user  Click Ban User For More Info
+/unban_user Click Unban User For More Info
 /banned_users Banned User Details
 /total How Many Files Added In Database
 /logger  Get Logs
-/delete Delete File From Database
+/delete Delete File From Database**
 
 """
 
 ABOUT = """
-➥ Name :  Auto Filter V3
+**➥ Name :  Find Your Movie Bot
     
-➥ Creator : [Naughty PROFESSOR](
-https://youtube.com/c/NaughtyPROFESSOR)
+➥ Creator : [Royal Krrishna](https://t.me/RoyalKrrishna)
 
-➥ Language : Python3
+➥ How To Open Links? : [Check](https://youtu.be/1Bf6cP9cmdI)**
 
-➥ Library : Pyrogram Asyncio 1.13.0
-
-➥ Tutorial : [Click Me](https://youtu.be/5hnYOKBzyi8)
 """
