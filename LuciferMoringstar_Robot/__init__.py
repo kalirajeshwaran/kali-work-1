@@ -32,8 +32,6 @@ Bot Owner Only 👇🏻
 ABOUT = """
 **➥ Name :  Find Your Movie Bot
     
-➥ Creator : [Royal Krrishna](https://t.me/RoyalKrrishna)
-
-➥ How To Open Links? : [Check](https://youtu.be/1Bf6cP9cmdI)**
+➥ Creator : [Royal Krrishna](https://t.me/RoyalKrrishna)**
 
 """
