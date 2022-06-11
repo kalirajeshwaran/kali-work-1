@@ -117,7 +117,7 @@ async def start(bot, message):
                 [[
                 InlineKeyboardButton("How To Open Links ❓", url='https://youtu.be/1Bf6cP9cmdI')
                 ],[
-                InlineKeyboardButton("Report", callback_data="help"),
+                InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
                 ]]
             )
