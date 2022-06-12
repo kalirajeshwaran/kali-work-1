@@ -1,22 +1,10 @@
 {
-    "name": "Auto Filter Bot V3",
-    "description": "A greater auto filter bot with features like IMDb support,inline mode,broadcast feature etc..",
-    "logo":"https://telegra.ph/file/ad9cb7fc42ec0e5e6d006.jpg",
-    "keywords": [
-      "telegram",
-      "auto-filter",
-      "filter",
-      "best",
-      "indian",
-      "pyrogram",
-      "media",
-      "search",
-      "channel",
-      "index",
-      "inline"
-    ],
-    "website": "https://github.com/DalinMathew/AutoFilterBotV3",
-    "repository": "https://github.com/DalinMathew/AutoFilterBotV3",
+    "name": "AutoFilterShort",
+    "description": "A greater auto filter bot with Url Shortner Support",
+    "logo":"https://telegra.ph/file/c7e80b849875ddae5f883.jpg",
+    
+    "website": "https://github.com/RoyalKrrishna/AutoFilterShort",
+    "repository": "https://github.com/RoyalKrrishna/AutoFilterShort",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -50,7 +38,7 @@
         },
         "START_MSG": {
             "description": "Welcome message for start command",
-            "value": "**Hi, I'm Auto Filter Bot With Greater Abilities**",
+            "value": "**Hi, I'm Auto Filter Bot**",
             "required": false
         },
         "USE_CAPTION_FILTER": {
@@ -79,7 +67,7 @@
         },
         "BOT_NAME": {
             "description": "Name of the database in mongoDB ",
-            "value": "LuciferMoringstar_Robot"
+            "value": "FindYourMovie"
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
