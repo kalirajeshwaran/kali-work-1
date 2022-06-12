@@ -329,19 +329,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
                 return
-        elif query.data == "donate":
+        elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('PhonePe', url='https://bit.ly/3HPyU8Q'),
-                    InlineKeyboardButton('Google pay', url='https://bit.ly/3cIVYrw')
-                ],
-                [
-                    InlineKeyboardButton('PayTM', url='https://bit.ly/2Zh0Z7D')
+                    InlineKeyboardButton('Making Video', url=f'{TUTORIAL}')
                 ]
-            ]
-                
-            await query.message.edit(text="If you like this bot and want to support Us❗\n\nThen you can really help us with\nServer costs by donating to our Wallet.\n\nThank You...☕🥺❤️", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-
+                ]
+            await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True),
+        elif query.data == "about":
+            buttons = [
+                [
+                    InlineKeyboardButton('Making Video', url=f'{TUTORIAL}')
+                ]
+                ]
+            await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data.startswith("subinps"):
             ident, file_id = query.data.split("#")
