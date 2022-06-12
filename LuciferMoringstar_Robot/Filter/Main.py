@@ -54,7 +54,7 @@ async def filter(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
     if 2 < len(message.text) < 100:    
-        proc_msg = await message.reply_text('Please wait...')
+        proc_msg = await message.reply_sticker(sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
         btn = []
         search = message.text
         mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**"
@@ -120,7 +120,7 @@ async def filter(client, message):
                 await proc_msg.delete()
 
             else:
-                await message.reply_text(f"<b>{search}: 🍿 ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
                 await proc_msg.delete()
             return
 
@@ -158,7 +158,7 @@ async def group(client, message):
             botusername=await client.get_me()
             nyva=botusername.username
             BOT["username"]=nyva
-        proc_msg = await message.reply_text('Please wait...') 
+        proc_msg = await message.reply_sticker(sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
         files = await get_filter_results(query=search)
         if files:
             for file in files:
