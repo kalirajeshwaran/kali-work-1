@@ -75,7 +75,6 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
                 await asyncio.sleep(10)
-                await resp.delete()
                 await nyva.delete()
                 await message.delete()
 
@@ -175,7 +174,6 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
                 await asyncio.sleep(10)
-                await resp.delete()
                 await nyva.delete()
                 await message.delete()
                     
