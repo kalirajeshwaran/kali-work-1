@@ -3,6 +3,7 @@ from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 import re
+import asyncio
 from pyrogram.errors import UserNotParticipant
 from LuciferMoringstar_Robot import get_filter_results, get_file_details, is_subscribed, get_poster
 from LuciferMoringstar_Robot import RATING, GENRES, HELP, ABOUT
@@ -73,6 +74,8 @@ async def filter(client, message):
                     btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
+                await asyncio.sleep(10)
+                await message.delete()
 #                 btn.append(
 #                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
 #                     )
@@ -168,6 +171,8 @@ async def group(client, message):
                     btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
+                await asyncio.sleep(10)
+                await message.delete()
                     
 #                 btn.append(
 #                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
