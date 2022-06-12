@@ -17,7 +17,7 @@ AUTH_USERS = []
 AUTH_CHANNEL = None
 
 # MongoDB information
-DATABASE_URI = "mongodb://[LuciferMoringstar_Robot:LuciferMoringstar_Robot@]host1[:port1][,...hostN[:portN]][/[defaultauthdb]?retryWrites=true&w=majority"
+DATABASE_URI = "Mongodb url"
 DATABASE_NAME = 'FindYourMovie'
 COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
 
