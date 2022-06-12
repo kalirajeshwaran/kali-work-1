@@ -113,7 +113,6 @@ async def start(bot, message):
             photo='https://telegra.ph/file/c7e80b849875ddae5f883.jpg',
             caption=START_MSG,
             parse_mode="Markdown",
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("How To Open Links ❓", url='https://youtu.be/1Bf6cP9cmdI')
