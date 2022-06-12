@@ -75,7 +75,7 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
                 await asyncio.sleep(10)
-                await message.delete()
+                await client.delete()
 #                 btn.append(
 #                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
 #                     )
