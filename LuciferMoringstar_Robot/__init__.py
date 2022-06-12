@@ -13,7 +13,7 @@ from .Channel import (
 HELP = """
 **Users Commads 👇🏻
 
-/start :- check am Alive
+/start - Check I'm Alive
 
 
 Bot Owner Only 👇🏻
