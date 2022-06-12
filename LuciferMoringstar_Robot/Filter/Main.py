@@ -74,8 +74,8 @@ async def filter(client, message):
                     btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
-                await asyncio.sleep(10)
-                await client.delete()
+                await asyncio.sleep(300)
+                await message.delete()
 #                 btn.append(
 #                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
 #                     )
@@ -172,7 +172,7 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
                 await asyncio.sleep(10)
-                await message.delete()
+                await files.delete()
                     
 #                 btn.append(
 #                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
