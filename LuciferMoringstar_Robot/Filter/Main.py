@@ -51,26 +51,50 @@ async def filter(client, message):
             return
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
-    if 2 < len(message.text) < 100:    
+     if 2 < len(message.text) < 100:    
+        proc_msg = await message.reply_text('Please wait...')
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
-                    )
+                nyva=BOT.get("username")
+                if not nyva:
+                    botusername=await client.get_me()
+                    nyva=botusername.username
+                    BOT["username"]=nyva
+                resp = requests.get(f'https://droplink.co/api?api={DROPLINKS_API}&url=https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}').json()
+                if resp['status'] == 'success':
+                    url = resp['shortenedUrl']
+                    btn.append(
+                    [InlineKeyboardButton(text=f"{filename}", url=url)]
+                )
+#                 btn.append(
+#                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
+#                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            await client.send_message(chat_id=message.from_user.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
+            reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("Click To Check Spelling ✅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie')
+                        ],
+                        [
+                            InlineKeyboardButton("Click To Check Release Date 📅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie%20Release%20Date')
+                        ]
+                    ]
+                )
+                )
+            await proc_msg.delete()
             return
+
 
         if not btn:
             return
 
-        if len(btn) > 10: 
+        if len(btn) > 10:
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
             BUTTONS[keyword] = {
@@ -116,26 +140,33 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
             nyva=botusername.username
             BOT["username"]=nyva
+        proc_msg = await message.reply_text('Please wait...') 
         files = await get_filter_results(query=search)
         if files:
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
+                resp = requests.get(f'https://droplink.co/api?api={DROPLINKS_API}&url=https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}').json()
+                if resp['status'] == 'success':
+                    url = resp['shortenedUrl']
+                    btn.append(
+                    [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
+                    
+#                 btn.append(
+#                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
+#                 )
         else:
             return
         if not btn:
             return
 
-        if len(btn) > 10: 
+        if len(btn) > 10:
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
             BUTTONS[keyword] = {
