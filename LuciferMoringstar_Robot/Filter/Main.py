@@ -173,7 +173,7 @@ async def group(client, message):
 #                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
 #                 )
         else:
-            await client.send_message(chat_id=message.from_user.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
+            await client.send_message(chat_id=message.chat.id, text="No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅",
             reply_markup=InlineKeyboardMarkup(
                     [
                         [
