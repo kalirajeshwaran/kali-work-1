@@ -35,3 +35,21 @@ ABOUT = """
 ➥ Creator : [Royal Krrishna](https://t.me/RoyalKrrishna)**
 
 """
+
+OPEN = """
+`For Movie : Movie Name 💢
+Example : RRR ✅
+
+If Not Found : Movie Name + Year 💢
+Example : RRR 2022 ✅
+
+For Series : Series Name 💢
+Example : Ms Marvel ✅
+
+If Not Found : Series Name + Season 💢
+Example : Ms Marvel S01 ✅
+
+If Not Found : Series Name + Season + Episode 💢
+Example : Ms Marvel [S01 E03 or S01E03] ✅`
+
+"""
