@@ -115,7 +115,7 @@ async def start(bot, message):
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("How To Open Links ❓", url='https://youtu.be/1Bf6cP9cmdI')
+                InlineKeyboardButton("📂 How To Search Files 📂", callback_data="open")
                 ],[
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
