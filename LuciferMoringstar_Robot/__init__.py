@@ -37,7 +37,7 @@ ABOUT = """
 """
 
 OPEN = """
-Read This Carefully To Know How To Find Any Movies Or Series File From Our Bot.🍿
+**Read This Carefully To Know How To Find Any Movies Or Series File From Our Bot.🍿
 
 For Movie - Movie Name 💢
 Example - RRR ✅
