@@ -37,33 +37,22 @@ ABOUT = """
 """
 
 OPEN = """
-**Read This Carefully To Know How To Find Any Movies Or Series File From Our Bot.🍿
+**ʀᴇᴀᴅ ᴛʜɪꜱ ᴄᴀʀᴇꜰᴜʟʟʏ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇꜱ ᴏʀ ꜱᴇʀɪᴇꜱ ꜰɪʟᴇ ꜰʀᴏᴍ ᴏᴜʀ ʙᴏᴛ.🍿
 
-For Movie - Movie Name
+ꜰᴏʀ ᴍᴏᴠɪᴇ - ᴍᴏᴠɪᴇ ɴᴀᴍᴇ
+ᴇxᴀᴍᴘʟᴇ - ʀʀʀ ✅
 
-Example - RRR ✅
+ɪꜰ ɴᴏᴛ ꜰᴏᴜɴᴅ : ᴍᴏᴠɪᴇ ɴᴀᴍᴇ + ʏᴇᴀʀ
+ᴇxᴀᴍᴘʟᴇ - ʀʀʀ 2022 ✅
 
+ꜰᴏʀ ꜱᴇʀɪᴇꜱ - ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ
+ᴇxᴀᴍᴘʟᴇ - ᴍꜱ ᴍᴀʀᴠᴇʟ ✅
 
-If Not Found : Movie Name + Year
+ɪꜰ ɴᴏᴛ ꜰᴏᴜɴᴅ : ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ + ꜱᴇᴀꜱᴏɴ
+ᴇxᴀᴍᴘʟᴇ - ᴍꜱ ᴍᴀʀᴠᴇʟ ꜱ01 ✅
 
-Example - RRR 2022 ✅
+ɪꜰ ɴᴏᴛ ꜰᴏᴜɴᴅ - ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ + ꜱᴇᴀꜱᴏɴ + ᴇᴘɪꜱᴏᴅᴇ
+ᴇxᴀᴍᴘʟᴇ - ᴍꜱ ᴍᴀʀᴠᴇʟ [ꜱ01 ᴇ03 ᴏʀ ꜱ01ᴇ03] ✅
 
-
-For Series - Series Name
-
-Example - Ms Marvel ✅
-
-
-If Not Found : Series Name + Season
-
-Example - Ms Marvel S01 ✅
-
-
-If Not Found - Series Name + Season + Episode
-
-Example - Ms Marvel [S01 E03 or S01E03] ✅
-
-
-Dev @RoyalKrrishna 🌝**
-
+ᴅᴇᴠ @ʀᴏʏᴀʟᴋʀʀɪꜱʜɴᴀ 🌝**
 """
