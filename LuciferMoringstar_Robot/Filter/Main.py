@@ -349,6 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
                 return
         elif query.data == "open":
+        elif query.data == "start":
             buttons = [
                 [
                     InlineKeyboardButton('❓How To Open Link', url=f'{TUTORIAL}'),
