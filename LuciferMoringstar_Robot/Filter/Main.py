@@ -173,7 +173,22 @@ async def group(client, message):
 #                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
 #                 )
         else:
+            await client.send_message(chat_id=message.from_user.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
+            reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("Click To Check Spelling ✅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie')
+                        ],
+                        [
+                            InlineKeyboardButton("Click To Check Release Date 📅",url=f'http://www.google.com/search?q={message.text.replace(" ", "%20")}%20Movie%20Release%20Date')
+                        ]
+                    ]
+                )
+                )
+            await proc_msg.delete()
             return
+
+
         if not btn:
             return
 
