@@ -37,19 +37,23 @@ ABOUT = """
 """
 
 OPEN = """
-`For Movie : Movie Name 💢
-Example : RRR ✅
+Read This Carefully To Know How To Find Any Movies Or Series File From Our Bot.🍿
+
+For Movie - Movie Name 💢
+Example - RRR ✅
 
 If Not Found : Movie Name + Year 💢
-Example : RRR 2022 ✅
+Example - RRR 2022 ✅
 
-For Series : Series Name 💢
-Example : Ms Marvel ✅
+For Series - Series Name 💢
+Example - Ms Marvel ✅
 
 If Not Found : Series Name + Season 💢
-Example : Ms Marvel S01 ✅
+Example - Ms Marvel S01 ✅
 
-If Not Found : Series Name + Season + Episode 💢
-Example : Ms Marvel [S01 E03 or S01E03] ✅`
+If Not Found - Series Name + Season + Episode 💢
+Example - Ms Marvel [S01 E03 or S01E03] ✅**
+
+Creator @RoyalKrrishna 🌝
 
 """
