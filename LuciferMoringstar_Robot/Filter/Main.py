@@ -59,8 +59,6 @@ async def filter(client, message):
         search = message.text
         mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**"
         files = await get_filter_results(query=search)
-        await asyncio.sleep(30)
-        await btn.delete()
         if files:
             for file in files:
                 file_id = file.file_id
@@ -161,8 +159,6 @@ async def group(client, message):
             BOT["username"]=nyva
         proc_msg = await message.reply_sticker(sticker='CAACAgIAAxkBAAEE-d1ipaeEBQABkYqzvvZYJL56zS218NcAAuUAA1advQoICxZklQXRiiQE')
         files = await get_filter_results(query=search)
-        await asyncio.sleep(30)
-        await btn.delete()
         if files:
             for file in files:
                 file_id = file.file_id
