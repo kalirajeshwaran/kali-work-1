@@ -70,7 +70,7 @@ async def filter(client, message):
                     BOT["username"]=nyva
                 resp = requests.get(f'https://api.shareus.in/api?api={SHAREUS_API}&url=https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}').json()
                 if resp['status'] == 'success':
-                    url = resp['shortenedUrl']
+                    url = resp['shortlink']
                     btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )
@@ -165,7 +165,7 @@ async def group(client, message):
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 resp = requests.get(f'https://api.shareus.in/api?api={SHAREUS_API}&url=https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}').json()
                 if resp['status'] == 'success':
-                    url = resp['shortenedUrl']
+                    url = resp['shortlink']
                     btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=url)]
                 )            
