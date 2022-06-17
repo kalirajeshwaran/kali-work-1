@@ -54,7 +54,7 @@ async def filter(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
     if 2 < len(message.text) < 100:    
-        proc_msg = await message.reply_sticker(sticker='CAACAgIAAxkBAAEE-d1ipaeEBQABkYqzvvZYJL56zS218NcAAuUAA1advQoICxZklQXRiiQE')
+        search_msg = await message.reply_sticker(sticker='CAACAgIAAxkBAAEE-d1ipaeEBQABkYqzvvZYJL56zS218NcAAuUAA1advQoICxZklQXRiiQE')
         btn = []
         search = message.text
         mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**"
@@ -90,6 +90,7 @@ async def filter(client, message):
                     ]
                 )
                 )
+            await search_msg.delete()
             await asyncio.sleep(300)
             await proc_msg.delete()
             return
@@ -117,10 +118,13 @@ async def filter(client, message):
                 poster=await get_poster(search)
             if poster:
                 proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await search_msg.delete()
+                await asyncio.sleep(300)
                 await proc_msg.delete()
 
             else:
                 proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await search_msg.delete()
                 await asyncio.sleep(300)
                 await proc_msg.delete()
             return
@@ -141,10 +145,12 @@ async def filter(client, message):
             poster=await get_poster(search)
         if poster:
             proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await search_msg.delete()
             await asyncio.sleep(300)
-            proc_msg = await proc_msg.delete()
+            await proc_msg.delete()
         else:
             proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await search_msg.delete()
             await asyncio.sleep(300)
             await proc_msg.delete()
 
@@ -161,7 +167,7 @@ async def group(client, message):
             botusername=await client.get_me()
             nyva=botusername.username
             BOT["username"]=nyva
-        proc_msg = await message.reply_sticker(sticker='CAACAgIAAxkBAAEE-d1ipaeEBQABkYqzvvZYJL56zS218NcAAuUAA1advQoICxZklQXRiiQE')
+        search_msg = await message.reply_sticker(sticker='CAACAgIAAxkBAAEE-d1ipaeEBQABkYqzvvZYJL56zS218NcAAuUAA1advQoICxZklQXRiiQE')
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -189,6 +195,7 @@ async def group(client, message):
                     ]
                 )
                 )
+            await search_msg.delete()
             await asyncio.sleep(300)
             await proc_msg.delete()
             return
@@ -216,10 +223,12 @@ async def group(client, message):
                 poster=await get_poster(search)
             if poster:
                 proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await search_msg.delete()
                 await asyncio.sleep(300)
                 await proc_msg.delete()
             else:
                 proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await search_msg.delete()
                 await asyncio.sleep(300)
                 await proc_msg.delete()
             return
@@ -240,10 +249,12 @@ async def group(client, message):
             poster=await get_poster(search)
         if poster:
             proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await search_msg.delete()
             await asyncio.sleep(300)
             await proc_msg.delete()
         else:
             proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await search_msg.delete()
             await asyncio.sleep(300)
             await proc_msg.delete()
 
