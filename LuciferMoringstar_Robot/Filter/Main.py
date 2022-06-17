@@ -68,7 +68,7 @@ async def filter(client, message):
                     botusername=await client.get_me()
                     nyva=botusername.username
                     BOT["username"]=nyva
-                resp = requests.get(f'https://api.shareus.in/api?api={SHAREUS_API}&url=https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}').json()
+                resp = requests.get(f'https://api.shareus.in/shortLink?token={SHAREUS_API}&format=json&link=https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}').json()
                 if resp['status'] == 'success':
                     url = resp['shortlink']
                     btn.append(
@@ -163,7 +163,7 @@ async def group(client, message):
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                resp = requests.get(f'https://api.shareus.in/api?api={SHAREUS_API}&url=https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}').json()
+                resp = requests.get(f'https://api.shareus.in/shortLink?token={SHAREUS_API}&format=json&link=https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}').json()
                 if resp['status'] == 'success':
                     url = resp['shortlink']
                     btn.append(
