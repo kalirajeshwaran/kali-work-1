@@ -90,6 +90,7 @@ async def filter(client, message):
                     ]
                 )
                 )
+            await asyncio.sleep(300)
             await proc_msg.delete()
             return
 
@@ -120,6 +121,7 @@ async def filter(client, message):
 
             else:
                 proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(300)
                 await proc_msg.delete()
             return
 
@@ -139,9 +141,11 @@ async def filter(client, message):
             poster=await get_poster(search)
         if poster:
             proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
             proc_msg = await proc_msg.delete()
         else:
             proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
             await proc_msg.delete()
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
@@ -185,6 +189,7 @@ async def group(client, message):
                     ]
                 )
                 )
+            await asyncio.sleep(300)
             await proc_msg.delete()
             return
 
@@ -211,9 +216,11 @@ async def group(client, message):
                 poster=await get_poster(search)
             if poster:
                 proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(300)
                 await proc_msg.delete()
             else:
                 proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(300)
                 await proc_msg.delete()
             return
 
@@ -233,9 +240,11 @@ async def group(client, message):
             poster=await get_poster(search)
         if poster:
             proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
             await proc_msg.delete()
         else:
             proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
             await proc_msg.delete()
 
     
