@@ -1,5 +1,6 @@
 import os
 import logging
+import asyncio
 from pyrogram import Client, filters
 from pyrogram import StopPropagation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -87,12 +88,15 @@ async def start(bot, message):
                         InlineKeyboardButton('❗Report❗️', 'https://t.me/royalkrrishna')
                     ]
                     ]
-                await bot.send_cached_media(
+                proc_msg = await bot.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
+                await asyncio.sleep(300)
+                await proc_msg.delete()
+                return
         except Exception as err:
             await message.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
     elif len(message.command) > 1 and message.command[1] == 'subscribe':
