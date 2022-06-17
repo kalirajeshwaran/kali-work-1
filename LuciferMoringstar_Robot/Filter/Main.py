@@ -78,7 +78,7 @@ async def filter(client, message):
 #                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
 #                     )
         else:
-            await client.send_message(chat_id=message.from_user.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
+            proc_msg = await client.send_message(chat_id=message.from_user.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
             reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -115,11 +115,11 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
                 await proc_msg.delete()
 
             else:
-                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
                 await proc_msg.delete()
             return
 
@@ -138,10 +138,10 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await proc_msg.delete()
+            proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            proc_msg = await proc_msg.delete()
         else:
-            await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
             await proc_msg.delete()
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
@@ -173,7 +173,7 @@ async def group(client, message):
 #                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
 #                 )
         else:
-            await client.send_message(chat_id=message.chat.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
+            proc_msg = await client.send_message(chat_id=message.chat.id, text="**No Results Found❗️\n\nType Correct Spelling ✅\nAdd Year For Better Results 📅**",
             reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -210,10 +210,10 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
                 await proc_msg.delete()
             else:
-                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
                 await proc_msg.delete()
             return
 
@@ -232,10 +232,10 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            proc_msg = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
             await proc_msg.delete()
         else:
-            await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            proc_msg = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
             await proc_msg.delete()
 
     
