@@ -98,6 +98,11 @@
             "description": "ID of a Channel (user Notification)",
             "value": "",
             "required": true
+        },
+        "SHAREUS_API": {
+            "description": "Shareus.in API",
+            "value": "",
+            "required": false
         }
     },
     "addons": [],
