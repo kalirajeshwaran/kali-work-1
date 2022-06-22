@@ -32,7 +32,8 @@ TUTORIAL = "https://mdisk.me/convertor/9x20/7oV2vv"
 DATABASE_URI = environ['DATABASE_2']
 DATABASE_NAME = environ['BOT_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-
+# Link Shortner API
+SHAREUS_API = environ.get('SHAREUS_API')
 # Messages
 default_start_msg = """
 **Hi, I'm Auto Filter V3**
