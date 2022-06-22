@@ -1,5 +1,5 @@
 # @RoyalKrrishna
-from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, TUTORIAL, BUTTON, START_MSG
+from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, TUTORIAL, BUTTON, START_MSG, SHAREUS_API
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 import re
@@ -11,7 +11,6 @@ import requests
 import random
 BUTTONS = {}
 BOT = {}
-SHAREUS_API = 'laaxTOiCZNQzaParnXQIwfP1pGu2'
 
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
 async def filter(client, message):
