@@ -30,9 +30,13 @@ Bot Owner Only 👇🏻
 """
 
 ABOUT = """
-**➥ Name :  Find Your Movie Bot
+**➥ Name :  Hindi Movie Search Bot
     
-➥ Creator : [Royal Krrishna](https://t.me/RoyalKrrishna)**
+➥ Creator : [Badsha Shek](https://t.me/kingBadsha3232)
+
+➥ Updates : [Badsha Studios](https://t.me/Badsha_Studios)
+
+➥ YouTube : [Badsha Studios Yt](https://youtube.com/channel/UCFjqpS7MmN42sybrG0Vr0NQ)
 
 """
 
@@ -54,5 +58,5 @@ Exᴀᴍᴘʟᴇ - Mꜱ Mᴀʀᴠᴇʟ S01 ✅
 Iꜰ ɴᴏᴛ ꜰᴏᴜɴᴅ - Sᴇʀɪᴇꜱ Nᴀᴍᴇ + Sᴇᴀꜱᴏɴ + Eᴘɪꜱᴏᴅᴇ
 Exᴀᴍᴘʟᴇ - Mꜱ Mᴀʀᴠᴇʟ S01 S03 ᴏʀ S01E03 ✅
 
-Dᴇᴠ **@RoyalKrrishna 🌝**
+Dᴇᴠ **@kingBadsha3232 🌝**
 """
