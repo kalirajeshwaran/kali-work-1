@@ -91,7 +91,7 @@ def get_reply_markup(query):
     buttons = [[
         InlineKeyboardButton('Watch', url=f'{TUTORIAL}')
         ],[
-        InlineKeyboardButton('❗️Report❗️', url="https://t.me/RoyalKrrishna")
+        InlineKeyboardButton('❗️Report❗️', url="https://t.me/kingBadsha3232")
         ]]
     return InlineKeyboardMarkup(buttons)
 
