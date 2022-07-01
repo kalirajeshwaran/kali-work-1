@@ -121,13 +121,8 @@ async def start(bot, message):
                 [[
                 InlineKeyboardButton("📂 How To Search Files 📂", callback_data="open")
                 ],[
-                InlineKeyboardButton("♻️ HΞLᎮ ♻️", callback_data="help"),
-                InlineKeyboardButton("♻️ ΛBOUT ♻️", callback_data="about")
-                ],[
-                InlineKeyboardButton(' ꜰᴀᴄᴇʙᴏᴏᴋ ', url='https://www.facebook.com/badsha.shek.944'),
-                InlineKeyboardButton(' ɪɴsᴛᴀɢʀᴀᴍ ', url='https://www.instagram.com/badsha.shek.944')
-                ],[
-                InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCFjqpS7MmN42sybrG0Vr0NQ')
+                InlineKeyboardButton("Help", callback_data="help"),
+                InlineKeyboardButton("About", callback_data="about")
                 ]]
             )
         )
