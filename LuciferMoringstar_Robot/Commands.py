@@ -124,10 +124,12 @@ async def start(bot, message):
                 InlineKeyboardButton("♻️ HΞLᎮ ♻️", callback_data="help"),
                 InlineKeyboardButton("♻️ ΛBOUT ♻️", callback_data="about")
                 ],[
-                InlineKeyboardButton(' ꜰᴀᴄᴇʙᴏᴏᴋ ', url='https://www.facebook.com/badsha.shek.944'),
-                InlineKeyboardButton(' ɪɴsᴛᴀɢʀᴀᴍ ', url='https://www.instagram.com/badsha.shek.944')
+                InlineKeyboardButton("🤖 Updates", url='https://t.me/Badsha_Studios')
                 ],[
-                InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCFjqpS7MmN42sybrG0Vr0NQ')
+                InlineKeyboardButton("ꜰᴀᴄᴇʙᴏᴏᴋ", url='https://www.facebook.com/badsha.shek.944'),
+                InlineKeyboardButton("ɪɴsᴛᴀɢʀᴀᴍ", url='https://www.instagram.com/badsha.shek.944')
+                ],[
+                InlineKeyboardButton("✅ SUBSCᏒIBΞ  ✅", url='https://youtube.com/channel/UCFjqpS7MmN42sybrG0Vr0NQ')
                 ]]
             )
         )
