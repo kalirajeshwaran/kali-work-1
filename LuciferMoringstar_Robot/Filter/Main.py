@@ -406,11 +406,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton("💢 Our Group", url="https://t.me/Badsha_OTT"),
-                        InlineKeyboardButton("Report ❗", url="https://t.me/kingBadsha3232")
+                        InlineKeyboardButton("💢 Our Group", url="https://t.me/Movie_Maker_Backup"),
+                        InlineKeyboardButton("Report ❗", url="https://t.me/AakashOfficialz")
                     ],
                     [
-                        InlineKeyboardButton("How To Open Link❓", url="https://youtu.be/1Bf6cP9cmdI")
+                        InlineKeyboardButton("How To Open Link❓", url="https://t.me/+H_E3OYggvXU4MTk1")
                     ]
                 ]
                 
@@ -441,8 +441,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Our Group', url='https://t.me/Badsha_OTT'),
-                        InlineKeyboardButton('Tutorial', url='https://youtu.be/1Bf6cP9cmdI')
+                        InlineKeyboardButton('Our Group', url='https://t.me/Movie_Maker_Backup'),
+                        InlineKeyboardButton('Tutorial', url='https://t.me/+H_E3OYggvXU4MTk1')
                     ]
                     ]
                 
