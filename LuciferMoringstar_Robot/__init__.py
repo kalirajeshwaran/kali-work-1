@@ -30,7 +30,7 @@ Bot Owner Only 👇🏻
 """
 
 ABOUT = """
-**➥ Name :  Link Search Bot
+**➥ Name :  Movie Search Ultra Bot
     
 ➥ Creator : [Aakash Ofdicial](https://t.me/AakashOfficialz)
 
