@@ -1,10 +1,10 @@
 {
     "name": "AutoFilterShort",
     "description": "A auto filter bot with Url Shortner Support",
-    "logo":"https://telegra.ph/file/c7e80b849875ddae5f883.jpg",
+    "logo":"https://telegra.ph/file/55eda65422afb05f8955f.jpg",
     
-    "website": "https://github.com/Badsha323/my-love3",
-    "repository": "https://github.com/Badsha323/my-love3",
+    "website": "https://github.com/AK4111/aakash-work-1",
+    "repository": "https://github.com/AK4111/aakash-work-1",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -101,7 +101,7 @@
         },
         "SHAREUS_API": {
             "description": "Shareus.in API",
-            "value": "81naZhlL0hNUxu6iZBJxObSVPQK2",
+            "value": "NJYmi870bkU7uiqabwqLDmzrPHo1",
             "required": false
         }
     },
