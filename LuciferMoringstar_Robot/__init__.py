@@ -32,7 +32,7 @@ Bot Owner Only 👇🏻
 ABOUT = """
 **➥ Name :  Movie Search Ultra Bot
     
-➥ Creator : [Aakash Ofdicial](https://t.me/AakashOfficialz)
+➥ Creator : [Aakash Official](https://t.me/AakashOfficialz)
 
 ➥ Updates : [Moviez Express Official](https://t.me/Moviez_Express_Official)
 
