@@ -85,7 +85,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton("❗Report❗️", url="https://t.me/kingBadsha3232")
+                        InlineKeyboardButton("❗Report❗️", url="https://t.me/AakashOfficialz")
                     ]
                     ]
                 proc_msg = await bot.send_cached_media(
@@ -114,7 +114,7 @@ async def start(bot, message):
         )
     else:
         await message.reply_photo(
-            photo='https://telegra.ph/file/8529dc0cfe9632714096f.jpg',
+            photo='https://telegra.ph/file/55eda65422afb05f8955f.jpg',
             caption=START_MSG,
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
@@ -124,12 +124,8 @@ async def start(bot, message):
                 InlineKeyboardButton("♻️ HΞLᎮ ♻️", callback_data="help"),
                 InlineKeyboardButton("♻️ ΛBOUT ♻️", callback_data="about")
                 ],[
-                InlineKeyboardButton("🤖 Updates", url='https://t.me/Badsha_Studios')
-                ],[
-                InlineKeyboardButton("ꜰᴀᴄᴇʙᴏᴏᴋ", url='https://www.facebook.com/badsha.shek.944'),
-                InlineKeyboardButton("ɪɴsᴛᴀɢʀᴀᴍ", url='https://www.instagram.com/badsha.shek.944')
-                ],[
-                InlineKeyboardButton("✅ SUBSCᏒIBΞ  ✅", url='https://youtube.com/channel/UCFjqpS7MmN42sybrG0Vr0NQ')
+                InlineKeyboardButton("🤖 Updates", url='https://t.me/Badsha_Studios'),
+                InlineKeyboardButton("Group", url='https://t.me/Movie_Maker_Backup')
                 ]]
             )
         )
